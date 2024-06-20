@@ -1,12 +1,14 @@
-﻿using Smartwyre.DeveloperTest.Types;
+﻿using Smartwyre.DeveloperTest.Database;
+using Smartwyre.DeveloperTest.Types;
+using System.Linq;
 
 namespace Smartwyre.DeveloperTest.Data;
 
-public class ProductDataStore
+public class ProductDataStore : IProductDataStore
 {
     public Product GetProduct(string productIdentifier)
     {
-        // Access database to retrieve account, code removed for brevity 
-        return new Product();
+        // Access dummy database to retrieve product
+        return DbContext.Products.FirstOrDefault(x => x.Identifier == productIdentifier);
     }
 }
