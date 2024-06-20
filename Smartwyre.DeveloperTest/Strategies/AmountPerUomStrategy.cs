@@ -2,7 +2,7 @@
 
 namespace Smartwyre.DeveloperTest.Strategies
 {
-    internal class AmountPerUomStrategy : IRebateCalculationStrategy
+    public class AmountPerUomStrategy : IRebateCalculationStrategy
     {
         public SupportedIncentiveType SupportedIncentiveType => SupportedIncentiveType.AmountPerUom;
 

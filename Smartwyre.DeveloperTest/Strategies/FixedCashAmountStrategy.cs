@@ -2,7 +2,7 @@
 
 namespace Smartwyre.DeveloperTest.Strategies
 {
-    internal class FixedCashAmountStrategy : IRebateCalculationStrategy
+    public class FixedCashAmountStrategy : IRebateCalculationStrategy
     {
         public SupportedIncentiveType SupportedIncentiveType => SupportedIncentiveType.FixedCashAmount;
 
